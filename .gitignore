@@ -57,14 +57,11 @@ tensorboard/
 
 # ML artifacts / checkpoints / large data
 *.ckpt
-*.pt
 *.pth
 *.h5
 *.hdf5
-*.pkl
 *.pickle
 *.npy
-*.npz
 *.parquet
 *.tfrecord
 *.onnx
