@@ -1,0 +1,82 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE / editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# Logs
+*.log
+logs/
+wandb/
+runs/
+lightning_logs/
+tb_logs/
+tensorboard/
+
+# ML artifacts / checkpoints / large data
+*.ckpt
+*.pt
+*.pth
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.parquet
+*.tfrecord
+*.onnx
+*.safetensors
+
+# Datasets / outputs (uncomment/adjust as needed)
+# data/
+# datasets/
+# outputs/
+# checkpoints/
+
+# OS misc
+Thumbs.db
+ehthumbs.db
+Desktop.ini
