@@ -1,0 +1,21 @@
+# Hyperparameters for NF (MEGA) – stellar mass + magnitudes
+feature_columns: ['log_stellar_mass', 'magnitude[SDSS.g]', 'magnitude[SDSS.r]', 'magnitude[SDSS.i]', 'magnitude[SDSS.z]', 'magnitude[UKIDSS.Y]']
+context_dim: 6
+input_dim: 1
+context_dim: 6
+hidden_dims: [128, 128]
+n_transforms: 6
+count_bins: 8
+bound: 5.0
+
+# Optuna best params
+hidden: 128
+n_transforms: 6
+count_bins: 8
+lr: 0.0022112935901859474
+
+best_optuna_value (NLL): 0.274630
+final_train_loss: 0.243464
+final_test_loss:  0.270245
+n_train: 16906
+n_test:  4227

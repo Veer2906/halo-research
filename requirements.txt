@@ -1,0 +1,26 @@
+# Core scientific stack
+numpy>=1.24
+scipy>=1.10
+h5py>=3.8
+matplotlib>=3.7
+joblib>=1.3
+
+# Normalizing flows
+torch>=2.0
+pyro-ppl>=1.8
+
+# Hyperparameter search
+optuna>=3.2
+
+# Graph neural net (HaloGraphNet)
+torch-geometric>=2.3
+torch-scatter>=2.1
+torch-cluster>=1.6
+
+# Coverage diagnostic (latest on PyPI is 0.1.1 as of May 2026)
+tarp>=0.1.1
+deprecation>=2.1     # tarp's undeclared dep
+
+# Notebook runtime (each model is shipped as model.ipynb)
+jupyter>=1.0
+nbconvert>=7.0

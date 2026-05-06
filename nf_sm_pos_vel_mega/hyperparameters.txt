@@ -1,0 +1,21 @@
+# Hyperparameters for NF (MEGA) – stellar mass + |pos| + |vel|
+feature_columns: ['log_stellar_mass', 'log_pos_modulus', 'log_vel_modulus']
+context_dim: 3
+input_dim: 1
+context_dim: 3
+hidden_dims: [64, 64]
+n_transforms: 5
+count_bins: 8
+bound: 5.0
+
+# Optuna best params
+hidden: 64
+n_transforms: 5
+count_bins: 8
+lr: 0.00034213327400603894
+
+best_optuna_value (NLL): 0.439322
+final_train_loss: 0.413568
+final_test_loss:  0.444718
+n_train: 62021
+n_test:  15505

@@ -1,0 +1,17 @@
+# Hyperparameters for NF (IllustrisTNG) – stellar mass + |pos| + |vel|
+model_name: NF (IllustrisTNG) – stellar mass + |pos| + |vel|
+feature_columns: ['log_stellar_mass', 'log_pos_modulus', 'log_vel_modulus']
+context_dim: 3
+input_dim: 1
+hidden_dims: [64, 64]
+n_transforms: 5
+count_bins: 8
+bound: 5.0
+learning_rate: 0.00034
+batch_size: 512
+n_epochs: 120
+split_seed: 42
+n_train: 9916
+n_test: 2480
+final_train_loss: 0.05052995076403022
+final_test_loss: 0.1251438558101654

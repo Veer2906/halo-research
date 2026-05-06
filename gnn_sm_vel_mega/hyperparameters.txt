@@ -1,0 +1,28 @@
+# GNN+MNN hyperparameters
+arch.use_model: EdgeNet
+arch.node_features: 5
+arch.n_layers: 2
+arch.k_nn: 5.0
+arch.hidden_channels: 300
+arch.latent_channels: 100
+features.use_hmR: 0
+features.use_vel: 1
+features.use_phot: 0
+features.galcen_frame: 0
+features.only_positions: 0
+norms.boxsize: 25000.0
+norms.velnorm: 100.0
+norms.radnorm: 8.0
+norms.mag_ref: 30.0
+
+learning_rate: 0.001
+weight_decay: 1e-05
+batch_size: 128
+n_epochs: 100
+augment_rotations: True
+
+best_val_loss: -9.200392
+best_epoch: 53
+n_train: 55941
+n_val: 6215
+n_test: 15539
