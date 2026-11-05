@@ -5,40 +5,6 @@ that we trained on CAMELS-LH data for the central-galaxy / halo-mass
 regression problem, plus the per-simulation baselines and the
 cross-model comparison plots.
 
-> Every model here is a reimplementation of the relevant bits of the
-> exploratory notebooks (`NF-MEGA/`, `my_model/`, `new_model/`,
-> `new_light_model/`, `w_light/`, `HaloGraphNet/GNN_NFlow.ipynb`)
-> as a single self-contained `model.ipynb` per model. Each notebook
-> loads the data, runs Optuna (NF only), trains, infers, and produces
-> every artifact you need to evaluate it.
-
-## Folder map
-
-```
-release/
-├── shared/                          metric helpers used by compare_models/
-│   └── metrics.py                   RMSE / chi² / PCC / eps / R²
-│
-├── nf_sm_only_mega/                 NF – SM only
-├── nf_sm_pos_vel_mega/              NF – SM + |pos| + |vel|
-├── nf_sm_mag_mega/                  NF – SM + magnitudes
-├── gnn_sm_vel_mega/                 GNN+MNN – SM + |vel|
-├── gnn_sm_vel_mag_mega/             GNN+MNN – SM + |vel| + magnitudes
-│
-├── per_sim/                         single-suite NF baselines
-│   ├── astrid_nf_sm_pos_vel/
-│   ├── illustristng_nf_sm_pos_vel/
-│   ├── simba_nf_sm_pos_vel/
-│   └── swift_eagle_nf_sm_pos_vel/
-│
-└── compare_models/                  cross-model overlay + tables
-```
-
-Each leaf folder has a single, self-contained `model.ipynb` plus a
-`README.md`. Open the notebook and run all cells — it loads the data,
-runs hyperparameter search (NF), trains the model, samples 1000
-posteriors per test halo, and writes every artifact below in one pass.
-
 ```bash
 jupyter lab <folder>/model.ipynb   # or:  jupyter nbconvert --to notebook --execute <folder>/model.ipynb
 ```
